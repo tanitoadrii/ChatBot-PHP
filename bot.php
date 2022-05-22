@@ -1,4 +1,5 @@
-<!-- Created by Tanitoadri -->
+<!-- Created By CampCodes -->
+<!-- Editado y traducido por Tanitoadri -->
 <?php
 header('Content-Type: text/html; charset=ISO-8859-1');
 ?>
@@ -7,7 +8,7 @@ header('Content-Type: text/html; charset=ISO-8859-1');
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Somehow I got an error, so I comment the title, just uncomment to show -->
+    <!-- Si descomentas el titulo abajo, sustituyes el titulo de la web sobre la que pongas el ChatBot (puede dar error) -->
     <!-- <title>ChatBot</title>-->
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
@@ -42,7 +43,7 @@ header('Content-Type: text/html; charset=ISO-8859-1');
                 $(".form").append($msg);
                 $("#data").val('');
                 
-                // start ajax code
+                // iniciar codigo ajax
                 $.ajax({
                     url: 'message.php',
                     type: 'POST',
@@ -50,7 +51,7 @@ header('Content-Type: text/html; charset=ISO-8859-1');
                     success: function(result){
                         $replay = '<div class="bot-inbox inbox"><div class="icon"><i class="fas fa-user"></i></div><div class="msg-header"><p>'+ result +'</p></div></div>';
                         $(".form").append($replay);
-                        // when chat goes down the scroll bar automatically comes to the bottom
+                        // cuando el chat baja, la barra de desplazamiento llega automáticamente al final
                         $(".form").scrollTop($(".form")[0].scrollHeight);
                     }
                 });
