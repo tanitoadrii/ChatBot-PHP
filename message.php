@@ -1,5 +1,5 @@
 <!-- Created By CampCodes -->
-<!-- Trducido y Editado por Tanitoadri -->
+<!-- Editado y traducido por Tanitoadri -->
 <?php
 header('Content-Type: text/html; charset=utf-8');
 
